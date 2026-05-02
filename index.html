@@ -125,18 +125,22 @@
           <h2>Начнем с короткой диагностики вашей ситуации</h2>
           <p>За 30 минут определим контекст, ограничения и ближайший полезный шаг.</p>
         </div>
-        <form class="contact-form" action="#" method="post">
+        <form class="contact-form" action="https://formsubmit.co/izovskiy@gmail.com" method="post">
+          <input type="hidden" name="_subject" value="Новая заявка с сайта IT Consulting">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://sergus66.github.io/izovskiy-test/#contact">
           <label>
             Имя
-            <input type="text" name="name" autocomplete="name">
+            <input type="text" name="name" autocomplete="name" required>
           </label>
           <label>
             Email
-            <input type="email" name="email" autocomplete="email">
+            <input type="email" name="email" autocomplete="email" required>
           </label>
           <label>
             Задача
-            <textarea name="message" rows="4"></textarea>
+            <textarea name="message" rows="4" required></textarea>
           </label>
           <button class="button primary" type="submit">Отправить заявку</button>
         </form>
